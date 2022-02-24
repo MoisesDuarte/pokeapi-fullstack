@@ -6,8 +6,8 @@ COPY package*.json /
 
 EXPOSE 3000
 
-RUN npm install -g nodemon && npm install
+RUN npm ci
 
 COPY . /
 
-CMD ["nodemon", "app.js"]
+CMD ["node", "app.js"]
