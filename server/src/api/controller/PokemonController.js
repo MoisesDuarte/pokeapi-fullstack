@@ -1,4 +1,4 @@
-const api_url = 'https://pokeapi.co/api/v2/pokemon';
+const api_url = process.env.POKEAPI_HOST;
 const fetch = require('node-fetch');
 const { capitalizeEveryWord } = require('../../utilities/stringUtilities');
 

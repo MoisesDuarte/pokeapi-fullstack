@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 class ApiResource {
-  // TODO: Change to .env definition later
-  baseUrl = 'http://localhost:3000';
+  baseUrl = import.meta.env.VITE_SERVER_HOST;
 
   async getPokemonByName(name) {
     try {
