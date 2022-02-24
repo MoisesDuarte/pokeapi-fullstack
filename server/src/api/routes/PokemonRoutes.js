@@ -3,6 +3,6 @@ const router = express.Router();
 
 const PokemonController = require("../controller/PokemonController");
 
-router.get('/:name', PokemonController.fetchPokemonAbilitiesByName);
+router.get('/:name', PokemonController.fetchPokemonByName);
 
 module.exports = router;
